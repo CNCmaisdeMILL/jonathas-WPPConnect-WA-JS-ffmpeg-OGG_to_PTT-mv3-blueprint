@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { width: 280px; padding: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; background-color: #f0f2f5; }
+    h3 { margin-top: 0; color: #111b21; }
+    #drop-zone { border: 2px dashed #25D366; border-radius: 12px; padding: 40px 20px; cursor: pointer; background: white; transition: all 0.3s ease; color: #54656f; }
+    #drop-zone.hover { background: #dcf8c6; border-color: #075e54; }
+    .icon { font-size: 32px; margin-bottom: 10px; }
+    #status { margin-top: 12px; font-size: 13px; color: #111b21; font-weight: 500; }
+    /* Esconde o botão de arquivo feio do HTML padrão */
+    #file-input { display: none; }
+  </style>
+</head>
+<body>
+  <h3>PTT Stealth Tester</h3>
+  
+  <div id="drop-zone">
+    <div class="icon">🎤</div>
+    <b>Arraste ou Clique aqui</b><br>
+    <small>(MP3, WAV, M4A, etc)</small>
+  </div>
+  
+  <input type="file" id="file-input" accept="audio/*">
+  
+  <div id="status">Abra uma conversa no WhatsApp e selecione o arquivo.</div>
+
+  <script src="db-utility.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
